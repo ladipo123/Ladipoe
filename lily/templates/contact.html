@@ -1,0 +1,51 @@
+
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body  >
+
+				<form action="" method="POST">
+					{% csrf_token %}
+				<div class="col-md-7 col-md-pull-2 animate-box">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name" name="name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email" name="mail">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="body" class="form-control" id="" cols="30" rows="7" placeholder="home adress"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary btn-modify">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+
+		</div>
+	</div><!-- END container-wrap -->
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+</html>
+</body>
+{% endblock %}
